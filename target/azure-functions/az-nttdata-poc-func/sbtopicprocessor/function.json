@@ -1,0 +1,12 @@
+{
+  "scriptFile" : "../azure-1.jar",
+  "entryPoint" : "functionalpoc.Function.run",
+  "bindings" : [ {
+    "type" : "serviceBusTrigger",
+    "direction" : "in",
+    "name" : "pocnttdata",
+    "subscriptionName" : "pocsubscription",
+    "topicName" : "poctopic",
+    "connection" : "SBConnection"
+  } ]
+}
