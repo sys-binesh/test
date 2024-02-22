@@ -31,7 +31,7 @@ public class AzureTableStorage {
 			//TableClient tableClient = new TableClientBuilder().connectionString("DefaultEndpointsProtocol=https;AccountName=nttdatapocstorage;AccountKey=fzdMxNvNSdUDRX1JG43ADvxAkG7f78nl/HH5CAzzw+uJHf/Vkc2OmBrWLMZtbEpw4hm61EncLF1n+AStkli90A==;EndpointSuffix=core.windows.net").tableName("Product")
 					//.buildClient();
 			
-			TableClient tableClient = new TableClientBuilder().connectionString("DefaultEndpointsProtocol=https;AccountName=aznttdatapocsa;AccountKey=rYQioYhwJZIz4P4eicdDdbSh2nbm85Mpfj3XwI/C4QhfBrVMMxB8uDOJ6q/k185bjRwFDLkhRBpt+AStACgpTA==;EndpointSuffix=core.windows.net").tableName("Product")
+			TableClient tableClient1 = new TableClientBuilder().connectionString("DefaultEndpointsProtocol=https;AccountName=aznttdatapocsa;AccountKey=rYQioYhwJZIz4P4eicdDdbSh2nbm85Mpfj3XwI/C4QhfBrVMMxB8uDOJ6q/k185bjRwFDLkhRBpt+AStACgpTA==;EndpointSuffix=core.windows.net").tableName("Product")
 					.buildClient();
 
 			// Create a new employee TableEntity.
@@ -44,7 +44,7 @@ public class AzureTableStorage {
 			TableEntity productTable = new TableEntity(partitionKey, rowKey).setProperties(productInfo);
 
 			// Upsert the entity into the table
-			tableClient.upsertEntity(productTable);
+			tableClient1.upsertEntity(productTable);
 			product.setKey(rowKey);
 		} catch (Exception e) {
 			// Output the stack trace.
