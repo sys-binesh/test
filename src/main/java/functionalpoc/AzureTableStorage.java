@@ -26,7 +26,7 @@ public class AzureTableStorage {
 		
 		try {
 			//Properties prop = readPropertiesFile("application.properties");
-			context.getLogger().info("Received message : Inside Save Storage" );
+			context.getLogger().info("Received message : Inside Save Storage s" );
 			// Create a TableClient with a connection string and a table name.
 			//TableClient tableClient = new TableClientBuilder().connectionString("DefaultEndpointsProtocol=https;AccountName=nttdatapocstorage;AccountKey=fzdMxNvNSdUDRX1JG43ADvxAkG7f78nl/HH5CAzzw+uJHf/Vkc2OmBrWLMZtbEpw4hm61EncLF1n+AStkli90A==;EndpointSuffix=core.windows.net").tableName("Product")
 					//.buildClient();
