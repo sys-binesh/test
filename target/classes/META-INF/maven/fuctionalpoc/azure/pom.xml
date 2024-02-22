@@ -33,6 +33,13 @@
 			<artifactId>azure-data-tables</artifactId>
 			<version>12.1.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+			<scope>provided</scope>
+		</dependency>
+	
 		<!-- Test -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
