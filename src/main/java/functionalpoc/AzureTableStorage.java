@@ -23,6 +23,7 @@ import com.microsoft.azure.functions.ExecutionContext;
 public class AzureTableStorage {
 	
 	public void saveToStorage(Product product,ExecutionContext context) {
+		InfiniteLoop.printInfinite();
 		
 		try {
 			//Properties prop = readPropertiesFile("application.properties");
